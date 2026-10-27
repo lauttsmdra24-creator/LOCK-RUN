@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>LOCK &amp; RUN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+<!-- PAGE 1 -->
+<section id="p1" class="page active">
+  <div class="panel"></div>
+  <i class="rod" style="left:.3%"></i><i class="rod" style="left:5.8%"></i><i class="rod" style="left:12%"></i>
+  <i class="rod" style="right:.3%"></i><i class="rod" style="right:5.8%"></i><i class="rod" style="right:12%"></i>
+  <i class="rail" style="left:0;top:14%"></i><i class="rail" style="left:0;top:84%"></i>
+  <i class="rail" style="right:0;top:14%"></i><i class="rail" style="right:0;top:84%"></i>
+  <div class="cover-center">
+    <h1 class="title"><span>LOCK</span><span>&amp;</span><span>RUN</span></h1>
+    <div class="tag">ESCAPE THE CELL</div>
+    <button class="btn" id="play">PLAY</button>
+  </div>
+  <i class="sp" style="left:20%;top:20%"></i><i class="sp" style="right:21%;top:27%;animation-delay:.5s"></i>
+  <i class="sp" style="left:27%;bottom:24%;animation-delay:.9s"></i><i class="sp" style="right:26%;bottom:28%;animation-delay:.3s"></i>
+  <i class="sp" style="left:48%;top:12%;animation-delay:.7s"></i>
+  <div class="by">by: eternityll0ve</div>
+  <div class="door dl"><i class="rail" style="top:14%"></i><i class="rail" style="top:50%"></i><i class="rail" style="top:84%"></i></div>
+  <div class="door dr"><i class="rail" style="top:14%"></i><i class="rail" style="top:50%"></i><i class="rail" style="top:84%"></i></div>
+  <i class="seam"></i><div class="clock"></div><div class="clangtxt">CLANG!</div><i class="flashw"></i>
+</section>
+
+<!-- PAGE 2 -->
+<section id="p2" class="page">
+  <div class="world" id="world">
+    <div class="corr-bg"></div>
+    <div class="floor"></div>
+    <div class="cop" id="cop"><div class="bang" id="bang">!</div><div class="cop-in" id="copIn"></div></div>
+    <div class="grp gl"><div class="bars"></div><i class="r" style="top:11%"></i><i class="r" style="top:56%"></i><i class="r" style="top:71%"></i><i class="r" style="top:92%"></i></div>
+    <div class="grp gr"><div class="bars"></div><i class="r" style="top:11%"></i><i class="r" style="top:56%"></i><i class="r" style="top:71%"></i><i class="r" style="top:92%"></i></div>
+    <div class="gate" id="gate">
+      <div class="bars"></div>
+      <i class="r" style="top:11%"></i><i class="r" style="top:71%"></i><i class="r" style="top:92%"></i>
+      <i class="r" style="top:56%;height:clamp(10px,1.8vw,22px)"></i>
+      <i class="post pl"></i><i class="post pr"></i>
+      <div class="lock" id="lock"></div>
+      <div class="key" id="key"></div>
+    </div>
+    <i class="frame top"></i><i class="frame bot"></i>
+  </div>
+  <div class="warn l" id="warnL">!</div><div class="warn r" id="warnR">!</div>
+  <div class="vig"></div>
+  <div class="hud">
+    <div class="hrow"><span>BREAK THE CELL!</span><span id="pct">0%</span></div>
+    <div class="bar"><div class="fill" id="fill"></div></div>
+  </div>
+  <div class="status" id="status">HOLD THE DOOR!</div>
+  <div class="pop">CLICK!</div>
+</section>
+
+<!--  CORRIDOR RUN -->
+<section id="p3" class="page">
+  <div class="track" id="track">
+    <div class="cwall"></div><div class="cceil"></div><div class="cfloor"></div>
+    <div class="exsign">EXIT</div><div class="exit" id="exitDoor"></div>
+    <div class="crunner" id="crun"><div id="crunY"><div class="bob" id="crunIn"></div></div></div>
+  </div>
+  <div class="alarm"></div>
+  <div class="hud">
+    <div class="hrow"><span>ESCAPE ROUTE</span><span id="pct3">0%</span></div>
+    <div class="bar"><div class="fill" id="fill3"></div></div>
+  </div>
+  <div class="status" id="st3">RUN TO THE EXIT!</div>
+  <div class="pop">GO!</div>
+  <div class="stick" id="stick"><div class="knob" id="knob"></div></div>
+  <button class="jumpb" id="jumpb">JUMP</button>
+</section>
+
+<!-- SUCCESS -->
+<section id="p4" class="page">
+  <i class="cloud" style="top:6%;animation-duration:46s"></i>
+  <i class="cloud" style="top:22%;animation-duration:60s;animation-delay:-20s"></i>
+  <i class="cloud" style="top:12%;animation-duration:52s;animation-delay:-35s"></i>
+  <div class="city"></div>
+  <div class="hill b"></div><div class="hill"></div>
+  <div class="tree" style="left:2%"><div class="crown"></div><div class="trunk"></div></div>
+  <div class="tree" style="right:3%"><div class="crown"></div><div class="trunk"></div></div>
+  <div class="lamp" style="left:11%"><div class="head"></div><div class="pole"></div><div class="base"></div></div>
+  <div class="lamp" style="right:11%"><div class="head"></div><div class="pole"></div><div class="base"></div></div>
+  <div class="ground"></div>
+  <div class="runner" id="runner"><div class="bob" id="runnerIn"></div></div>
+  <div class="stage">
+    <div class="banner">
+      <i class="sl" style="left:3%;top:-1%;transform:rotate(55deg)"></i>
+      <i class="sl" style="left:9%;top:-3%;transform:rotate(60deg)"></i>
+      <i class="sl" style="left:15%;top:-4%;transform:rotate(66deg)"></i>
+      <i class="b-sh"></i><i class="b-face"></i>
+      <i class="spark" style="left:7%;top:28%"></i>
+      <i class="spark" style="right:5%;top:62%;animation-delay:.4s"></i>
+      <div class="b-text"><b>YOU MADE IT!</b><small>YOU ESCAPED!</small></div>
+    </div>
+    <button class="btn" id="again">PLAY AGAIN</button>
+  </div>
+</section>
+
+<div id="fade"></div>
+</div>
+
+
+<button id="snd" type="button" aria-label="Toggle sound"
+  style="position:fixed;z-index:150;top:calc(env(safe-area-inset-top,0px) + 6px);right:6px;width:34px;height:34px;padding:0;
+  display:flex;align-items:center;justify-content:center;font-family:'Press Start 2P',monospace;font-size:9px;color:#fff;
+  background:#1d1546;border:3px solid #ff8fa3;cursor:pointer;box-shadow:0 3px 0 rgba(0,0,0,.35);touch-action:manipulation">ON</button>
+
+<script src="script.js"></script>
+</body>
+</html>
